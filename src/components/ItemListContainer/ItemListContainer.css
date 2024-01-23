@@ -1,0 +1,15 @@
+.bienvenidas{
+    background-color: #2b2c28;
+    width: 100vw;
+    height: 50vh;
+    h1{
+        color: crimson;
+        
+        span{
+            font-family: "IBM Plex Sans", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            color: beige;
+        }
+    }
+}
