@@ -14,7 +14,7 @@ const App = () => {
       />
 
       <Item
-        img='public/productos/qiyi-megaminx.png'
+        img='./productos/qiyi-megaminx.png'
         name='Megaminx 3x3'
         price={10000}
         brand='Qiyi'
@@ -22,14 +22,14 @@ const App = () => {
       />
 
       <Item
-        img='public/productos/time-2x2.png'
+        img='./productos/time-2x2.png'
         name='Time Machine 2x2'
         price={16000}
         description='lalalalalalalal'
       />
 
       <Item
-        img='public/productos/qiyi-warrior3x3.png'
+        img='./productos/qiyi-warrior3x3.png'
         name='Warrior 3x3'
         price={16000}
         brand='Qiyi'
@@ -37,7 +37,7 @@ const App = () => {
       />
 
       <Item
-        img='public/productos/qiyi-pyraminx.png'
+        img='./productos/qiyi-pyraminx.png'
         name='Pyraminx'
         price={8000}
         brand='Qiyi'
@@ -45,7 +45,7 @@ const App = () => {
       />
 
       <Item
-        img='public/productos/sidgman-fisher-brick-wall.png'
+        img='./productos/sidgman-fisher-brick-wall.png'
         name='Sidgman 2x4x6 Fisher Brick Wall'
         price={18000}
         brand='Calvins Puzzle'
