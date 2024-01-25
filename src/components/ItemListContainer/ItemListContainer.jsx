@@ -1,12 +1,22 @@
 import React from 'react';
-import './ItemListContainer.css'
-const ItemListContainer = ({ greeting, marca, frasefinal}) => {
-    return (
+import { useState, useEffect } from 'react';
+import { getProductos } from '../asyncmock';
+import ItemList from '../ItemList/ItemList';
 
-        /* ahora es una seccion proximamente eso cambiara */
-        <section className='bienvenidas container-fluid d-flex flex-column align-items-center justify-content-center'>
-            <h1> {greeting} <span> {marca} </span>! {frasefinal} </h1>
-        </section>
+const ItemListContainer = () => {
+    const [productos, setProductos] = useState([]);
+
+    useEffect(() => {
+        getProductos()
+            .then(respuesta => setProductos(respuesta))
+            .catch(error => console.log(error))
+    }, [])
+
+    return (
+        <>
+            <h2 className='text-center m-5' > <span>[</span> Destacados <span>]</span></h2>
+            <ItemList productos={productos} />
+        </>
     )
 }
 

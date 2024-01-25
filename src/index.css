@@ -14,3 +14,7 @@
   background-color: #18584f;
   color: #fff;
 }
+
+strong, span{
+  color: red
+}

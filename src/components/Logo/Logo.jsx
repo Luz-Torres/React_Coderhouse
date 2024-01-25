@@ -1,10 +1,9 @@
 import React from 'react';
-import './Logo.css';
+
 const Logo = () => {
     return (
-        <div className='marca'>
-            <img className='marca-img' src="./logo.png" alt="logo"/>
-            {/* <h2 className='marca-nombre'>Cubic Store</h2> */}
+        <div>
+            <img style={{ width: "85px"}} src="./logo.png" alt="logo de tienda"/>
         </div>
     )
 }

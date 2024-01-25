@@ -4,7 +4,7 @@ import { FaUserCircle } from 'react-icons/fa';
 const Login = () => {
     return (
         <button className='container mx-auto'>
-            <FaUserCircle />
+            <FaUserCircle /> <strong>Iniciar sesión</strong>
         </button>
     )
 }

@@ -1,57 +1,22 @@
 import React from 'react';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Item from './components/Item/Item';
+import Inicio from './components/Inicio/Inicio';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
 const App = () => {
   return (
     <>
       <Navbar/>
-      <ItemListContainer
+
+      {/* saludo personalizado de inicio */}
+      <Inicio
         greeting="¡Bienvenidos a "
         marca="Cubic Store"
         frasefinal=" El lugar con objetos para crear recuerdos."
       />
 
-      <Item
-        img='./productos/qiyi-megaminx.png'
-        name='Megaminx 3x3'
-        price={10000}
-        brand='Qiyi'
-        description='lalalalalalalal'
-      />
-
-      <Item
-        img='./productos/time-2x2.png'
-        name='Time Machine 2x2'
-        price={16000}
-        description='lalalalalalalal'
-      />
-
-      <Item
-        img='./productos/qiyi-warrior3x3.png'
-        name='Warrior 3x3'
-        price={16000}
-        brand='Qiyi'
-        description='lalalalalalalal'
-      />
-
-      <Item
-        img='./productos/qiyi-pyraminx.png'
-        name='Pyraminx'
-        price={8000}
-        brand='Qiyi'
-        description='lalalalalalalal'
-      />
-
-      <Item
-        img='./productos/sidgman-fisher-brick-wall.png'
-        name='Sidgman 2x4x6 Fisher Brick Wall'
-        price={18000}
-        brand='Calvins Puzzle'
-        description='Es un 2x4x6 fisher pero en su estado resuelto las piezas de las capas centrales están desfasadas, debido a esto hay que realizar unos giros previos para desbloquear todos los giros'
-      />
-
+      <ItemListContainer/>
       <Footer/>
     </>
   )
