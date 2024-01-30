@@ -33,10 +33,10 @@ const DATA_MOCK =
     },
     { 
         id: 5,
-        name: "Time Machine",
-        price: 8000,
-        img: "./productos/time-2x2.png",
-        brand: "ASDASD" },
+        name: "Mirror 3x3",
+        price: 7000,
+        img: "./productos/z-cube-mirror.png",
+        brand: "Z Cube" },
     { 
         id: 6,
         name: "Ghost",
