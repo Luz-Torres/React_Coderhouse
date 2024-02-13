@@ -8,13 +8,12 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         getProductos()
-            .then(respuesta => setProductos(respuesta))
+            .then(res => setProductos(res))
             .catch(err => console.log(err))
     }, [])
 
     return (
         <>
-            <h2 className='text-center m-5' > <span>[</span> Destacados <span>]</span></h2>
             <ItemList productos={productos} />
         </>
     )
