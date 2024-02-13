@@ -109,10 +109,10 @@ export const getUnProducto = (id) => {
     })
 }
 
-export const getProductosPorCategoria = (idCategoria) => {
+export const getProductosPorCategoria = (idCategory) => {
     return new Promise(resolve => {
         setTimeout(() => {
-            const productosCategoria =DATA_MOCK.filter(item => item.idCat === idCategoria);
+            const productosCategoria =DATA_MOCK.filter(item => item.category === idCategory);
             resolve(productosCategoria);
         }, 500)
     })

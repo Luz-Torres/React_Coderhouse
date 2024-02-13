@@ -2,7 +2,7 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
 import './Navbar.css';
-
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,17 +11,17 @@ import Login from '../Login/Login';
 function NavBar() {
     return (
         <Navbar expand="lg">
-            <Container fluid>
-                <Navbar.Brand href="#home"><Logo/></Navbar.Brand>
+            <Container>
+                <Navbar.Brand href="/home"><Logo/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-5">
-                        <Nav.Link href="/home">Inicio</Nav.Link>
-                        <Nav.Link href="/resolucion">Resolución</Nav.Link>
-                        <Nav.Link href="/productos"> Productos</Nav.Link>
-                        <Nav.Link href="/contacto">Contacto</Nav.Link>
-                        <Nav.Link href="/usuarios"><Login/></Nav.Link>
-                        <Nav.Link href="/cart"><CartWidget/></Nav.Link>
+                        <Link className='nav-link' to="/home">Inicio</Link>
+                        <Link className='nav-link' to="/resolucion">Resolución</Link>
+                        <Link className='nav-link' to="/productos"> Productos</Link>
+                        <Link className='nav-link' to="/contacto">Contacto</Link>
+                        <Link className='nav-link' to="/usuarios"><Login/></Link>
+                        <Link className='nav-link' to="/cart"><CartWidget/></Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
