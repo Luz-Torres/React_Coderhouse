@@ -8,20 +8,27 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget';
 import Login from '../Login/Login';
-function NavBar() {
+const NavBar = () => {
     return (
         <Navbar expand="lg">
             <Container>
-                <Navbar.Brand href="/home"><Logo/></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Brand>
+                    <Link to="/"><Logo/></Link>
+                    
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" id="navbar-toggle" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-5">
-                        <Link className='nav-link' to="/home">Inicio</Link>
-                        <Link className='nav-link' to="/resolucion">Resolución</Link>
-                        <Link className='nav-link' to="/productos"> Productos</Link>
-                        <Link className='nav-link' to="/contacto">Contacto</Link>
-                        <Link className='nav-link' to="/usuarios"><Login/></Link>
-                        <Link className='nav-link' to="/cart"><CartWidget/></Link>
+                        <Link className='nav-link text-center' to="/">Inicio</Link>
+                        <Link className='nav-link text-center' to="/resolucion">Resolución</Link>
+                        <Link className='nav-link text-center' to="/productos"> Productos</Link>
+                        <Link className='nav-link text-center' to="/contacto">Contacto</Link>
+                        <Link className='nav-link text-center' to="/usuarios">
+                            <Login alt="User Icon"/>
+                        </Link>
+                        <Link className='nav-link' to="/cart">
+                            <CartWidget alt="Cart Icon"/>
+                        </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

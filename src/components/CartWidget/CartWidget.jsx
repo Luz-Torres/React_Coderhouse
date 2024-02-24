@@ -4,8 +4,8 @@ import './CartWidget.css';
 
 const CartWidget = () => {
     return (
-        <button className='container mx-auto'>
-            <BsCart2/> <strong>7</strong>
+        <button className='container mx-auto' aria-label='cart'>
+            <BsCart2 alt="Cart"/> <strong>7</strong>
         </button>
     )
 }

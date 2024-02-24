@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Ubuntu:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Kode+Mono&family=Ubuntu:ital@0;1&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: #131515;
+  font-optical-sizing: auto;
+
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 .btn{
   background-color: #339989;
@@ -15,6 +23,13 @@
   color: #fff;
 }
 
+
+h1{
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 strong, span{
   color: red
 }
@@ -22,3 +37,7 @@ strong, span{
   background-color: white;
 }
 
+a{
+  text-decoration: none;
+  color: #131515;
+}

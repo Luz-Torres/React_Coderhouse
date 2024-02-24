@@ -92,6 +92,7 @@ const DATA_MOCK =
         description:"..........",
     },
 ]
+
 export const getProductos = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
