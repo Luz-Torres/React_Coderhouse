@@ -1,5 +1,5 @@
 import React from 'react'
-const Header = () => {
+const Title = () => {
     return (
         <header>
             <h1 className='text-center m-5'><span>[</span>Notación básica del 3x3:<span>]</span></h1>
@@ -44,7 +44,7 @@ const List = () => {
 const Resolucion = () => {
     return (
         <>
-            <Header />
+            <Title/>
             <main>
                 <Paragraph />
                 <Image />

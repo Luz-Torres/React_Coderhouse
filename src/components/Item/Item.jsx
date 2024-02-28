@@ -15,7 +15,7 @@ const Item = ({id,name,img,price}) => {
                 <div className="card-body">
                     <h3 className='card-title'>{name}</h3>
                     <p className='product-price'> $ {price}</p>
-                    {id !== undefined && <Link className='btn' to={`/item/${id}`}> Ver + Info </Link>}
+                    <Link className='btn' to={`/item/${id}`}> Ver + Info </Link>
                 </div>
             </article>
         </div>

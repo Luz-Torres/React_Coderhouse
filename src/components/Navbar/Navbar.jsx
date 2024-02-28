@@ -2,7 +2,7 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,22 +13,21 @@ const NavBar = () => {
         <Navbar expand="lg">
             <Container>
                 <Navbar.Brand>
-                    <Link to="/"><Logo/></Link>
-                    
+                    <NavLink to="/"><Logo/></NavLink>    
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" id="navbar-toggle" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-5">
-                        <Link className='nav-link text-center' to="/">Inicio</Link>
-                        <Link className='nav-link text-center' to="/resolucion">Resolución</Link>
-                        <Link className='nav-link text-center' to="/productos"> Productos</Link>
-                        <Link className='nav-link text-center' to="/contacto">Contacto</Link>
-                        <Link className='nav-link text-center' to="/usuarios">
+                        <NavLink className='nav-link text-center' to="/">Inicio</NavLink>
+                        <NavLink className='nav-link text-center' to="/resolucion">Resolución</NavLink>
+                        <NavLink className='nav-link text-center' to="/productos"> Productos</NavLink>
+                        <NavLink className='nav-link text-center' to="/contacto">Contacto</NavLink>
+                        <NavLink className='nav-link text-center' to="/usuarios">
                             <Login alt="User Icon"/>
-                        </Link>
-                        <Link className='nav-link' to="/cart">
+                        </NavLink>
+                        <NavLink className='nav-link' to="/cart">
                             <CartWidget alt="Cart Icon"/>
-                        </Link>
+                        </NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
