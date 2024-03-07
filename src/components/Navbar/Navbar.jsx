@@ -7,7 +7,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget';
-import Login from '../Login/Login';
 const NavBar = () => {
     return (
         <Navbar expand="lg">
@@ -22,9 +21,6 @@ const NavBar = () => {
                         <NavLink className='nav-link text-center' to="/resolucion">Resolución</NavLink>
                         <NavLink className='nav-link text-center' to="/productos"> Productos</NavLink>
                         <NavLink className='nav-link text-center' to="/contacto">Contacto</NavLink>
-                        <NavLink className='nav-link text-center' to="/usuarios">
-                            <Login alt="User Icon"/>
-                        </NavLink>
                         <NavLink className='nav-link' to="/cart">
                             <CartWidget alt="Cart Icon"/>
                         </NavLink>

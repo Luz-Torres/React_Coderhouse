@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import {collection, getDocs, query, where} from "firebase/firestore";
 import {data} from '../../services/config';
 import ItemList from '../ItemList/ItemList';
+import LoaderCube from '../LoaderCube/LoaderCube';
 
 const useFetchProducts = (category) => {
     const [products, setProducts] = useState([]);
@@ -28,13 +29,12 @@ const useFetchProducts = (category) => {
     }, [category]);
 
     return { products, loading };
-}
-
+} 
 const ItemListContainer = () => {
     const { category } = useParams();
     const { products, loading } = useFetchProducts(category);
 
-    return loading ? <h2>Cargando...</h2> : <ItemList productos={products} />;
+    return loading ? <LoaderCube/>  : <ItemList productos={products} />;
 }
 
 export default ItemListContainer

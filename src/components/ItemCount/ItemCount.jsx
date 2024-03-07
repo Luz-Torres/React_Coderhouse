@@ -18,9 +18,9 @@ export default function ItemCount ( {stock, onAdd}) {
     
     return (
         <>
-            <button onClick={ increment }> - </button>
+            <button onClick={ decrement }> - </button>
                 <span> {count} </span>
-            <button onClick={ decrement }> + </button>
+            <button onClick={ increment }> + </button>
             <button onClick={onAdd}>Agregar al carrito</button>
         </>
     )

@@ -109,7 +109,6 @@ export const getUnProducto = (id) => {
         }, 500)
     })
 }
-
 export const getProductosPorCategoria = (idCategory) => {
     return new Promise(resolve => {
         setTimeout(() => {

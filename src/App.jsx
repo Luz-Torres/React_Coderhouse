@@ -20,18 +20,17 @@ const App = () => {
           <Route path="/" element={<Inicio/>}/>
           <Route path="/resolucion" element={<Resolucion/>}/>
           <Route path="/productos" element={<Productos/>} />
-          <Route path='/productos/:id' element={<ItemDetailConteiner />} />
-          {/* <Route path="/productos/:category/2x2" element={<Productos/>} />
+          <Route path='/item/:id' element={<ItemDetailConteiner />} />
+          <Route path="/productos/:category/2x2" element={<Productos/>} />
           <Route path="/productos/:category/3x3" element={<Productos/>} />
           <Route path="/productos/:category/minx" element={<Productos/>} />
-          <Route path="/productos/:category/otros" element={<Productos/>} /> */}
+          <Route path="/productos/:category/otros" element={<Productos/>} />
           <Route path="/contacto" element={<Contacto/>}/>
           <Route path="cart" element={<Cart/>}/>
-          <Route path="*" element={<NotFound/>}/>
+          {/* <Route path="*" element={<NotFound/>}/> */}
         </Routes>
       <Footer/>
     </BrowserRouter>
-    
   )
 }
 
